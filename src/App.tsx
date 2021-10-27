@@ -23,8 +23,8 @@ const App: FC = () => {
         <h1>Frequently asked questions</h1>
         <h3>Hello! Didn't find what you are looking for? Please contact us.</h3>
       </div>
-      {questions.map((element) => (
-        <section>
+      {questions.map((element, pos) => (
+        <section key={pos}>
           <div className="container">
             <div className="box">
               <div className="box-item" id="question1">
